@@ -1,6 +1,6 @@
 <ul>
     <% books.forEach(item=>{ %>
-    <li><%= item.title %></li>
+    <li class="book-item" data-id="<%= item.id %>"><%= item.title %></li>
    <% }) %>
     <li></li>
 </ul>
