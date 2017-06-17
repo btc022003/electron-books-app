@@ -13,3 +13,16 @@ bulma.css
 yarn # 安装依赖项
 npm start # 运行项目
 ```
+
+#### issues
+
+```js
+//window中加载html字符串的方法
+let win = new BrowserWindow({width:500,height:300})
+win.setTitle(res.data.title)
+win.loadURL('data:text/html;charset=utf-8,' + encodeURI(strHtml)) //把模版html文件加载在窗口中
+win.on('close',()=>{
+    win = null
+})
+win.show()
+```
